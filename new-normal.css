@@ -1,0 +1,122 @@
+body{
+    background-color: #EAE8E8;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+a{
+    /*혹시 몰라서 설정*/
+    text-decoration: none;
+}
+
+/*뒷배경 이미지*/
+#bgimg{
+    width: 100%;
+    height: 100%;
+}
+/*가운데정렬*/
+#header #n-main #footer{
+    display: inline-block;
+}
+/*------------헤더------------*/
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    width: 60%;
+    padding: 0 20%;
+    background: none;
+    z-index: 1;
+}
+/*로고*/
+.logo #a #logo-img{
+    width: 117px;        /*로고영역, 로고이미지, a태그 가로 고정*/
+}
+.logo{
+    cursor: pointer;    /*마우스 모양은 포인터로*/
+}
+/*로고 이미지*/
+#logo-img{
+}
+/*빈공간*/
+.null-a{
+    
+}
+/*------------헤더 끝------------*/
+
+/*------------뉴노멀 메인 부분------------*/
+#n-main{
+    /*영역을 전체영역으로 설정*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: aqua;
+    opacity: 50%;*/
+}
+.n-img-area{
+    /*선택할 이미지들이 들어갈 영역*/
+    position: absolute;
+    top: 20%;;
+    left: 23%;
+    width: 56%;
+    height: 51%;
+    /*border 주석 해제하면 영역 확인 가능*/
+    /* border: 2px solid red; */
+}
+/*각각 이미지 설정*/
+.n-img{
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* 이미지 마우스 오버 됐을때 스케일 */
+.n-img:hover{
+    transform: scale(0.95);
+}
+#n1:hover{
+   z-index: 2; 
+}
+/*------각 이미지 위치 설정------*/
+#n1{ /* 근무 */
+    width: 55%;
+    /* width: 370px;  */
+    position: absolute;
+    top: 20px;
+    left: 9%; 
+    z-index: 2;
+}
+#n2{ /* 방역 */
+    width: 40%;
+    /* width: 350px; */
+    position: absolute;
+    top: 70%;
+    left: 3rem;
+    top: 290px;
+    left: 5%; 
+
+}
+#n3{ /* 자기관리 */
+    width: 40%; 
+    /* width: 400px; */
+    position: absolute;
+    top: 11rem;
+    right: 2rem;
+    top: 170px;
+    right: 5%;
+
+
+}
+#n2 #n3{
+    z-index: 1;
+}
+/*------각 이미지 위치 설정------*/
